@@ -1,0 +1,16 @@
+package variaveis;
+
+public class Tipos {
+
+	public static void main(String[] args) {
+		
+		String nome = "Tiago Pelicer Lopes de Souza";
+		int idade = 32;
+		double altura = 1.84;
+		
+		System.out.println("Nome...: " + nome);
+		System.out.println("Idade..: " +idade+ " anos");
+		System.out.println("Altura.: " +altura);
+	}
+
+}

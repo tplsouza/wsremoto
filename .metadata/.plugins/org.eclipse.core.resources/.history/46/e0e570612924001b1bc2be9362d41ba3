@@ -1,0 +1,12 @@
+package br.com.formula1.modelo;
+
+public class carro {
+	
+private String escuderia;
+private short numero;
+private String cor;
+private float velocidadeAtual;
+private float valor;
+private boolean status;
+
+}

@@ -1,0 +1,18 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploDo {
+
+	public static void main(String[] args) {
+		do {
+			int qtde = Integer.parseInt(JOptionPane.showInputDialog("qtde"));
+			float valor = Float.parse(JOptionPane.showInputDialog("Valor"));
+			System.out.println("Total: " + (qtde*valor));
+			char resposta = JOptionPane.showInputDialog("digite S para prosseguir").charAt(0);
+			
+		} while();
+
+	}
+
+}

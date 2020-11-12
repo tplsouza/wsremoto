@@ -1,0 +1,51 @@
+package br.com.liveup.modelo;
+
+public class elevador {
+
+	private int andarAtual;
+	private int andarMaximo;
+	private int andarMinimo;
+	private int capacidadePessoas;
+	private int qtdadePessoas;
+	private String nome;
+
+
+	public void entrar(int pQtd) {
+		if ((qtdadePessoas + pQtd)<= capacidadePessoas) {
+
+			qtdadePessoas =+ pQtd;
+
+		} else {System.out.println("Excedeu capacidade");}
+
+	}
+
+	public void sair(int pQtd) {
+
+		qtdadePessoas =- pQtd;
+	}
+
+	public void subir() {
+		if((andarAtual +1) < andarMaximo) {
+			andarAtual =+ 1;
+		} else {System.out.println("Ultimo andar");}
+	}
+
+	public void descer() {
+		if((andarAtual - 1) < andarMinimo) {
+			andarAtual =- 1;
+		} else {System.out.println("Terreo");}
+
+	}
+
+	public String retornarTudo() {
+
+		return
+				"AndarAtual.........: " + andarAtual + "\n" +
+				"Andar Máximo.......: " + andarMaximo + "\n" +
+				"Andar Mínimo.......: " + andarMinimo + "\n" +
+				"Capacidade.........: " + capacidadePessoas + "\n" +
+				"Qtdade de Pessoas..: " + qtdadePessoas + "\n" +
+				"Nome...............: " + nome;
+
+	}
+}

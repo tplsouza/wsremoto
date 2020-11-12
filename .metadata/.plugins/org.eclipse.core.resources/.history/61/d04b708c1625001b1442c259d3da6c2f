@@ -1,0 +1,65 @@
+package br.com.ecommerce.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.beans.Cliente;
+import br.com.ecommerce.beans.Endereco;
+import br.com.ecommerce.beans.Produto;
+import br.com.ecommerce.beans.Venda;
+
+public class ImplementarVenda {
+
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	
+	public static float f(String msg) {
+		return Float.parseFloat(s(msg));
+	}
+	
+	public static int i(String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	
+	public static boolean b(String msg) {
+		return Boolean.parseBoolean(s(msg));
+	}
+	
+	public static void main(String[] args) {
+		
+		Venda venda = new Venda(
+				f("total"),
+				s("Data"),
+				new Cliente(
+						i("ID Cliente"),
+						s("Nome do Cliente"),
+						s("CPF cliente"),
+						new Endereco(
+								s("Endereco Cliente"),
+								s("Numero"),
+								b("Complemento"),
+								s("Bairro"),
+								s("Cidade"),
+								s("UF"),
+								s("CEP")
+								)
+						),
+				new Produto(
+						s("Descrição Produto"),
+						f("Valor de Venda"),
+						f("Valor de Compra"),
+						i("ID Produto"),
+						i("Qunatidade")
+						)
+				
+				);
+		
+		System.out.println(venda.getAll());
+		
+	
+	
+		
+
+	}
+
+}

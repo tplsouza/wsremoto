@@ -1,0 +1,19 @@
+package br.com.tv.implementacao;
+
+import br.com.elevador.modelo.Carro;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Elevador objeto = new Elevador();
+		//objeto.preencherEscuderia(JOptionPane.showInputDialog("Escuderia:"));
+		//objeto.preencherNumero(Short.parseShort(JOptionPane.showInputDialog("Número:")));
+		System.out.println("Escuderia: " + objeto.retornarEscuderia());
+		System.out.println("Número do carro: "  + objeto.retornarNumero());
+		System.out.println("Status: " + objeto.ligar());
+		System.out.println("Status: " + objeto.desligar());
+	}
+
+}
