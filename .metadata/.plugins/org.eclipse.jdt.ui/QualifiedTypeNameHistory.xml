@@ -7,9 +7,16 @@
 <fullyQualifiedTypeName name="java.lang.Void"/>
 <fullyQualifiedTypeName name="br.com.unixyz.beans.Professor"/>
 <fullyQualifiedTypeName name="br.com.unixyz.beans.Endereco"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="br.com.sistema.beans.Venda"/>
 <fullyQualifiedTypeName name="br.com.sistema.beans.Cliente"/>
 <fullyQualifiedTypeName name="br.com.sistema.beans.Endereco"/>
 <fullyQualifiedTypeName name="br.com.sistema.beans.Produto"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="br.com.ecommerce.util.PadraoProduto"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.util.PadraoConta"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.beans.Corrente"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.beans.Cliente"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.util.Magica"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.beans.Poupanca"/>
+<fullyQualifiedTypeName name="br.com.bankofoz.beans.Endereco"/>
 </qualifiedTypeNameHistroy>
