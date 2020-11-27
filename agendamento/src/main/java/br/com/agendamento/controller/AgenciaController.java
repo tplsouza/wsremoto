@@ -40,6 +40,14 @@ public class AgenciaController {
 
 				return ResponseEntity.ok(agencia);
 			}
+			
+			@PostMapping("/agencianome")
+			public ResponseEntity<Agencia> getAgenciaNome(@RequestBody Agencia objeto){
+				Agencia agencia = dao.findByNomeAgencia(objeto.getNomeAgencia());
+
+				return ResponseEntity.ok(agencia);
+			}
+
 
 	}
 

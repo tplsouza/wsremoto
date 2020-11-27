@@ -1,5 +1,6 @@
 package br.com.agendamento.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -34,9 +35,8 @@ public class Agendamento {
 	private String celularCliente;
 	
 	@Column(name="data_agendamento")
-	@Temporal(TemporalType.DATE)
 	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
-	private Date dataAgendamento;
+	private LocalDate dataAgendamento;
 	
 	@Column(name="hora_agendamento")
 	private String horaAgendamento;
@@ -50,7 +50,7 @@ public class Agendamento {
 	
 
 
-	public Agendamento(int numSeq, String nomeCliente, String emailCliente, String celularCliente, Date dataAgendamento,
+	public Agendamento(int numSeq, String nomeCliente, String emailCliente, String celularCliente, LocalDate dataAgendamento,
 			String horaAgendamento, String observacao, Agencia agencia) {
 		super();
 		this.numSeq = numSeq;
@@ -115,11 +115,11 @@ public class Agendamento {
 		this.celularCliente = celularCliente;
 	}
 
-	public Date getDataAgendamento() {
+	public LocalDate getDataAgendamento() {
 		return dataAgendamento;
 	}
 
-	public void setDataAgendamento(Date dataAgendamento) {
+	public void setDataAgendamento(LocalDate dataAgendamento) {
 		this.dataAgendamento = dataAgendamento;
 	}
 

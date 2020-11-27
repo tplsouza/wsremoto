@@ -10,5 +10,6 @@ import br.com.agendamento.model.Agencia;
 public interface AgenciaDAO extends CrudRepository<Agencia,Integer>{
 
 	public Agencia findById(int id);
+	public Agencia findByNomeAgencia(String nome);
 	
 }

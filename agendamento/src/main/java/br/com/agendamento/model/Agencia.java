@@ -38,7 +38,7 @@ public class Agencia {
 	private List<Agendamento> agendamentos;
 	
 
-
+	
 	public List<Agendamento> getAgendamentos() {
 		return agendamentos;
 	}

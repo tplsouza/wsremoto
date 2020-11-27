@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Agendamento</title>
+  <script type="text/javascript" src="agendamento.js"></script>
+</head>
+
+<body onload="carregaragencia()">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <br>
+        <b>
+          <h3 style="text-align: left;"> Sistema de Agendamento </h3>
+        </b><br>
+      </div>
+
+    </div>
+    <form>
+
+      <div class="form-row">
+        <div class="col-10">
+          <b><label for="inputAddress">Cliente</label></b>
+          <input type="text" class="form-control" id="txtcliente" placeholder="Nome completo">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-10">
+          <b><label for="inputAddress">Email</label></b>
+          <input type="email" class="form-control" id="txtemail" placeholder="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-10">
+          <b><label for="inputAddress">Celular</label> </b>
+          <input type="text" class="form-control" id="txtcelular" placeholder="Celular ou Whatsapp">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <b><label for="inputCity">Data</label></b>
+          <input type="date" class="form-control" id="txtdata">
+        </div>
+        <div class="form-group col-md-4">
+          <b> <label for="inputState">Agência</label> </b>
+          <select onchange="atualizahorarios()" id="cmbagencia" class="custom-select">
+
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <b> <label>Hora Início</label> </b>
+          <input readonly type="text" class="form-control" id="txtini">
+        </div>
+        <div class="form-group col-md-3">
+          <b> <label>Hora Fim</label> </b>
+          <input readonly type="text" class="form-control" id="txtfim">
+        </div>
+
+      </div>
+
+    </form>
+
+    <div>
+      <div class="row">
+        <div class="col-8">
+          <div class=text-right>
+            <button onclick="gravar()" type="button" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

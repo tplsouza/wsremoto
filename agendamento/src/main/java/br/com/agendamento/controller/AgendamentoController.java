@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.agendamento.dao.AgendamentoDAO;
-import br.com.agendamento.model.Agencia;
 import br.com.agendamento.model.Agendamento;
 
 @RestController
@@ -42,6 +41,15 @@ public class AgendamentoController {
 			return ResponseEntity.ok(lista);
 		}
 		
+		@PostMapping("/relatoriopordata")
+		public ResponseEntity<List<Agendamento>> getAgendamentoData(@RequestBody Agendamento objeto){
+			List<Agendamento> lista = dao.findByDataAgendamento(objeto.getDataAgendamento());
+			if (lista.size()==0) {
+					return ResponseEntity.status(404).build();
+				}
+			return ResponseEntity.ok(lista);
+		}
+		
 		@PostMapping("/relatorioporagenciadata")
 		public ResponseEntity<List<Agendamento>> getAgendamentoAgenciaData(@RequestBody Agendamento objeto){
 			List<Agendamento> lista = dao.findByAgenciaAndDataAgendamento(objeto.getAgencia(),objeto.getDataAgendamento());
@@ -54,6 +62,15 @@ public class AgendamentoController {
 		@PostMapping("/relatorioporagenciadatacliente")
 		public ResponseEntity<List<Agendamento>> getAgendamentoAgenciaDataCliente(@RequestBody Agendamento objeto){
 			List<Agendamento> lista = dao.findByAgenciaAndDataAgendamentoAndNomeCliente(objeto.getAgencia(),objeto.getDataAgendamento(),objeto.getNomeCliente());
+			if (lista.size()==0) {
+					return ResponseEntity.status(404).build();
+				}
+			return ResponseEntity.ok(lista);
+		}
+		
+		@PostMapping("/relatoriopordatacliente")
+		public ResponseEntity<List<Agendamento>> getAgendamentoDataCliente(@RequestBody Agendamento objeto){
+			List<Agendamento> lista = dao.findByDataAgendamentoAndNomeCliente(objeto.getDataAgendamento(),objeto.getNomeCliente());
 			if (lista.size()==0) {
 					return ResponseEntity.status(404).build();
 				}

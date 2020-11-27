@@ -2,6 +2,7 @@ INDEX VERSION 1.131+C:\Users\987310447\Desktop\Turma11C\wsremoto\.metadata\.plug
 3725081482.index
 4159017284.index
 1954832993.index
+911005604.index
 2431419838.index
 2669891014.index
 1331164565.index
@@ -31,9 +32,9 @@ INDEX VERSION 1.131+C:\Users\987310447\Desktop\Turma11C\wsremoto\.metadata\.plug
 3628926798.index
 383584198.index
 2586794861.index
+2863291190.index
 1885234657.index
 2651116887.index
-2863291190.index
 316211616.index
 2195202130.index
 1671498182.index
@@ -59,8 +60,8 @@ INDEX VERSION 1.131+C:\Users\987310447\Desktop\Turma11C\wsremoto\.metadata\.plug
 3989091895.index
 941638473.index
 1605091170.index
-1221545927.index
 2721908578.index
+1221545927.index
 540547314.index
 3753052409.index
 696616695.index
@@ -72,13 +73,13 @@ INDEX VERSION 1.131+C:\Users\987310447\Desktop\Turma11C\wsremoto\.metadata\.plug
 1093196003.index
 4127629308.index
 3508591141.index
-2594361398.index
 3829218934.index
+2594361398.index
 3137332726.index
 994313364.index
 2290215115.index
-3714773704.index
 1903550286.index
+3714773704.index
 2098750540.index
 2002561291.index
 1709136144.index
@@ -95,8 +96,8 @@ INDEX VERSION 1.131+C:\Users\987310447\Desktop\Turma11C\wsremoto\.metadata\.plug
 3676441533.index
 2538946849.index
 1721508124.index
-2313455669.index
 2451396649.index
+2313455669.index
 3839578677.index
 4268966843.index
 807128003.index

@@ -1,0 +1,32 @@
+headr
+
+body {
+
+    background-color: white;
+    font-family: Tahoma;
+ 
+   
+}
+
+h3{
+    font-size: 35px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: rgb(3, 2, 66);
+   
+}
+
+tr{
+    font-size: 16px;
+}
+
+
+.row {
+    background-color: hsl(16, 80%, 50%);
+     
+}
+
+
+
+
+    
